@@ -21,8 +21,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet"type="text/css">
     
     <!-- Styles -->
-    {{-- 次の1行を削除 --}}
-    <link href="{{ secure_asset('css/admin.css') }}" rel="stylesheet">
     {{-- 次の1行を追加 --}}
     <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
   </head>
