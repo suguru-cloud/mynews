@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet"type="text/css">
     
     <!-- Styles -->
+    {{-- Laravel標準で用意されているCSSを読み込みます --}}
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     {{-- 次の1行を追加 --}}
     <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
   </head>
@@ -53,14 +55,14 @@
             <!-- Authentication Links -->
             {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
             @guest
-              <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+              <li><a class="nav-link" href="{{ route ('login') }}">{{ __('Login') }}</a></li>
               
             {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
             @else  
               <li class="nav-item dropdown">
-                <a id="navbarDropdown" class="nav link dropdown-toggle" href="#"
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
                 role="botton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{ Auth::user()->name }} <span class="caret"></span>
+                  {{ Auth::user()->name }} <span class="caret"></span>
                 </a>
                  
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -68,7 +70,6 @@
                     onclick="event.preventDefalut();document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
                   </a>
-                   
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                   </form>
