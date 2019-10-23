@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="list-news col-md-12 mx-auto">
+      <div class="admin-news col-md-12 mx-auto">
         <div class="row">
           <table class="table table-dark">
             <thead>
