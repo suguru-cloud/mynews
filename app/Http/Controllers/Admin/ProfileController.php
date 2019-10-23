@@ -78,7 +78,6 @@ class ProfileController extends Controller
     $profile_form = $request->all();
 
     unset($profile_form['_token']);
-    unset($profile_form['image']);
     unset($profile_form['remove']);
     
     // 該当するデータを上書きして保存する
