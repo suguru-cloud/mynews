@@ -17,7 +17,7 @@ body {
   }*/
 }
 
-.hedline .caption .title {
+.hedline .caption .name {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -25,12 +25,20 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.hedline .caption .title h1 {
+.hedline .caption .name h1 {
   color: #fff;
   font-size: 1.2em;
 }
 
-.hedline .caption .body {
+.hedline .caption .gender {
+  font-size: 0.8em;
+}
+
+.hedline .caption .hobby {
+  font-size: 0.8em;
+}
+
+.hedline .caption .introduction {
   font-size: 0.8em;
 }
 
@@ -47,12 +55,20 @@ body {
   color: #999999;
 }
 
-.posts .post .title {
+.posts .post .name {
   font-size: 1.2em;
   font-weight: bold;
 }
 
-.posts .post .body {
+.posts .post .gender {
+  font-size: 0.8em;
+}
+
+.posts .post .hobby {
+  font-size: 0.8em;
+}
+
+.posts .post .introduction {
   font-size: 0.8em;
 }
 

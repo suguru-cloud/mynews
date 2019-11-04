@@ -7,29 +7,30 @@ body {
   height: 82px;
 }
 
-.hedline .caption {
+.headline .caption {
   position: relative;
   width: 350px;
 }
 
-.hedline .caption .image img {
+.headline .caption .image img {
   width: 100%;
+  height: auto;
 }
 
-.hedline .caption .title {
+.headline .caption .title {
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.hedline .caption .title h1 {
+.headline .caption .title h1 {
   color: #fff;
   font-size: 1.2em;
 }
 
-.hedline .caption .body {
+.headline .caption .body {
   font-size: 0.8em;
 }
 
